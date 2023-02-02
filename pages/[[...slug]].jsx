@@ -19,6 +19,7 @@ const componentMap = {
     hero: Hero,
     stats: Stats,
     button: Button,
+    
 };
 
 export default function ComposablePage({ page }) {
