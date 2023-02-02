@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../stackbit.config.js"],
+  "sourcesContent": ["import { ContentfulContentSource } from '@stackbit/cms-contentful';\n\nexport default {\n  stackbitVersion: '~0.6.0',\n  ssgName: 'nextjs',\n  nodeVersion: '16',\n  contentSources: [\n    new ContentfulContentSource({\n      spaceId: process.env.CONTENTFUL_SPACE_ID,\n      environment: process.env.CONTENTFUL_ENVIRONMENT,\n      previewToken: process.env.CONTENTFUL_PREVIEW_TOKEN,\n      accessToken: process.env.CONTENTFUL_MANAGEMENT_TOKEN,\n    }),\n  ],\n  models: {\n    page: {\n      type: 'page',\n      urlPath: '/{slug}',\n    },\n  },\n};\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,4BAAwC;AAExC,IAAO,0BAAQ;AAAA,EACb,iBAAiB;AAAA,EACjB,SAAS;AAAA,EACT,aAAa;AAAA,EACb,gBAAgB;AAAA,IACd,IAAI,8CAAwB;AAAA,MAC1B,SAAS,QAAQ,IAAI;AAAA,MACrB,aAAa,QAAQ,IAAI;AAAA,MACzB,cAAc,QAAQ,IAAI;AAAA,MAC1B,aAAa,QAAQ,IAAI;AAAA,IAC3B,CAAC;AAAA,EACH;AAAA,EACA,QAAQ;AAAA,IACN,MAAM;AAAA,MACJ,MAAM;AAAA,MACN,SAAS;AAAA,IACX;AAAA,EACF;AACF;",
+  "names": []
+}
