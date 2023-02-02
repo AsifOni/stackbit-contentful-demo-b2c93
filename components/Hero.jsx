@@ -12,7 +12,7 @@ export const Hero = (props) => {
     <div className="px-12 py-24 bg-gray-100" data-sb-object-id={props.id}>
       <div className={`flex mx-auto max-w-6xl gap-12 ${themeClassMap[props.theme] ?? themeClassMap['imgRight']}`} data-sb-object-id={props.theme}>
         <div className="max-w-xl py-20 mx-auto lg:shrink-0">
-          <h1 className="mb-6 text-5xl leading-tight" data-sb-object-id={props.id}>{props.heading}</h1>
+          <h1 className="mb-6 text-5xl leading-tight" data-sb-object-id={props.heading}>{props.heading}</h1>
           {props.body && (
             <Markdown options={{ forceBlock: true }} className="mb-6 text-lg">
               {props.body}
