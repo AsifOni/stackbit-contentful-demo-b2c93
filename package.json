@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@stackbit/cms-contentful": "^0.0.50",
+    "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.8",
     "contentful-export": "^7.18.0",
     "contentful-import": "^8.3.2",
