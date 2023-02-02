@@ -14,7 +14,7 @@ export const Hero = (props) => {
         <div className="max-w-xl py-20 mx-auto lg:shrink-0">
           <h1 className="mb-6 text-5xl leading-tight" data-sb-object-id={props.heading}>{props.heading}</h1>
           {props.body && (
-            <Markdown options={{ forceBlock: true }} className="mb-6 text-lg" data-sb-object-id={props.id}>
+            <Markdown options={{ forceBlock: true }} className="mb-6 text-lg" data-sb-object-id={props.body}>
               {props.body}
             </Markdown>
           )}
