@@ -1,7 +1,7 @@
 import { Hero } from '../components/Hero.jsx';
 import { Stats } from '../components/Stats.jsx';
 import { Button } from '../components/Button.jsx';
-import {ThreeColumnCard} from '../'
+import {ThreeColumnCard} from '../components/'
 import { getPageFromSlug, getPagePaths } from '../utils/content.js';
 
 export async function getStaticPaths() {
