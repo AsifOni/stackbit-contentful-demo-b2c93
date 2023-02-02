@@ -19,7 +19,7 @@ const componentMap = {
     hero: Hero,
     stats: Stats,
     button: Button,
-    ThreeColumnCard: ThreeColumnCard
+    threeColumnCard: ThreeColumnCard
 };
 
 export default function ComposablePage({ page }) {
