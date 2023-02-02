@@ -25,7 +25,7 @@ export const Stats = (props) => {
 };
 
 const itemThemeClassMap = {
-  primary: 'bg-violet-200',
+  primary: 'bg-violet-700',
   dark: 'bg-gray-500',
 };
 
