@@ -14,13 +14,13 @@ export const Card = (props) => {
             center: 'text-center',
         },
     };
-    const { imageMeta, title, subCopy, entireColumnLink, theme = 'left' } = props;
+    const { imageMeta, title, subCopy, columnLink, theme = 'left' } = props;
 
     const CardBody = () => {
         return (
             <div className={`flex flex-col ${themeClassMap.container[theme]}`}>
                 <div className={`mt-2 mb-4`}>
-                    <CustomImage theme={entireColumnLink ? 'rounded-xl' : ''} {...imageMeta} />
+                    <CustomImage theme={columnLink ? 'rounded-xl' : ''} {...imageMeta} />
                 </div>
                 <h3 className="mb-3 text-blue-charcoal font-bold">{title}</h3>
                 <p className={`leading-normal text-abbey ${themeClassMap.typoGraphy[theme]}`}>{subCopy}</p>
@@ -30,8 +30,8 @@ export const Card = (props) => {
 
     return (
         <>
-            {entireColumnLink ? (
-                <Link href={entireColumnLink}>
+            {columnLink ? (
+                <Link href={columnLink}>
                     <a>
                         <CardBody />
                     </a>
