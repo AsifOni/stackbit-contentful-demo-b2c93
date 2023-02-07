@@ -17,13 +17,7 @@ export const ThreeColumnCard = (props) => {
                     return (
                         <>
                             <p>{JSON.stringify(columnData)}</p>
-                            {/* <Card
-                                imageMeta={image}
-                                columnLink={columnLink}
-                                title={title}
-                                subCopy={subCopy}
-                                theme={theme}
-                            /> */}
+                            {/*  */}
                         </>
                     );
                 })}
