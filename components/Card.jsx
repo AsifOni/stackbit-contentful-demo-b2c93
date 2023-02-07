@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 /* Custom imports */
-import { CustomImage } from './CustomImage';
+import { CustomImage } from './CustomImage.jsx';
 
 export const Card = (props) => {
     const themeClassMap = {
