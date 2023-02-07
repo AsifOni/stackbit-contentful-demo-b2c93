@@ -10,7 +10,6 @@ async function getEntries(content_type, queryParams) {
         host: IS_DEV ? 'preview.contentful.com' : 'cdn.contentful.com',
     });
 
-    console.log('Client', client);
     const entries = await client.getEntries({ content_type, ...queryParams, include: 10 });
     return entries;
 }
