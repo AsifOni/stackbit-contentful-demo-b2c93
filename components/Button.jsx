@@ -7,7 +7,7 @@ const themeClassMap = {
 
 export const Button = (props) => {
     return (
-        <Link href={props.url}>
+        <Link href={props.url} passHref legacyBehavior>
             <a
                 rel="noreferrer"
                 className={`py-3 px-8 inline-block border rounded-md transition-all duration-300 ${
