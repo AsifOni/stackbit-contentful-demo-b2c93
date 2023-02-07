@@ -1,5 +1,5 @@
 /* Custom imports */
-import { Card } from './Card';
+import { Card } from './Card.jsx';
 
 export const ThreeColumnCard = (props) => {
     const { title, caption, columnData } = props;
