@@ -15,8 +15,7 @@ export const ThreeColumnCard = (props) => {
                     const { image, title, subCopy, columnLink, theme = 'left' } = column;
 
                     return (
-                        <>
-                        <p>Hello Man</p>
+                        <>                        
                         {/* <Card
                             key={`columnComp-${idx}`}
                             imageMeta={image}
