@@ -23,7 +23,7 @@ const componentMap = {
 };
 
 export default function ComposablePage({ page }) {
-    console.log(page);
+    console.log('page);
     return (
         <div>
             {(page.sections || []).map((section, idx) => {
