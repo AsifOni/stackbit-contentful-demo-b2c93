@@ -32,7 +32,7 @@ export async function getPageFromSlug(slug) {
     if (!page) throw new Error(`Page not found for slug: ${slug}`);
     const object = 
     console.log('OBJECT LOG', object)
-    return object;
+    return mapEntry(page);
 }
 
 function mapEntry(entry) {
