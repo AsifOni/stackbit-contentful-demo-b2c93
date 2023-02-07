@@ -14,6 +14,7 @@ export const ThreeColumnCard = (props) => {
                 {columnData?.map((column, idx) => {
                     const { image, title, subCopy, columnLink, theme = 'left' } = column;
 
+                    alert()
                     return (
                         <>
                             <p>{title}</p>
