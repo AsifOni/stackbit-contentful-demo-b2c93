@@ -22,7 +22,7 @@ export const ThreeColumnCard = (props) => {
                             title={title}
                             subCopy={subCopy}
                             theme={theme}
-                        /> */}
+                        />
                     );
                 })}
             </div>
