@@ -27,7 +27,7 @@ export const Card = (props) => {
             ),
             [BLOCKS.UL_LIST]: (node, children) => <ul className="list-disc ml-5">{children}</ul>,
             [INLINES.HYPERLINK]: (node, children) => (
-                <Link href={node.data.uri}>
+                <Link href={node.data.uri} passHref legacyBehavior>
                     <a rel="noreferrer">{children[0]}</a>
                 </Link>
             ),
