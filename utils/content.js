@@ -4,7 +4,7 @@ const PAGE_CONTENT_TYPE_ID = 'page';
 const IS_DEV = process.env.NODE_ENV === 'development';
 
 async function getEntries(content_type, queryParams) {
-    console.log('Content type')
+    console.log('Content type', content_type)
   const client = createClient({
     accessToken: IS_DEV ? process.env.CONTENTFUL_PREVIEW_TOKEN : process.env.CONTENTFUL_DELIVERY_TOKEN,
     space: process.env.CONTENTFUL_SPACE_ID,
