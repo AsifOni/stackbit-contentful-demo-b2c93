@@ -18,13 +18,7 @@ export const ThreeColumnCard = (props) => {
                         <>
                         
                         </>
-                        <Card
-                            imageMeta={image}
-                            columnLink={columnLink}
-                            title={title}
-                            subCopy={subCopy}
-                            theme={theme}
-                        />
+                        
                     );
                 })}
             </div>
