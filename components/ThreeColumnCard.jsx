@@ -13,7 +13,6 @@ export const ThreeColumnCard = (props) => {
             <div className="flex flex-row flex-wrap md:flex-nowrap md:space-x-5">
                 {columnData?.map((column, idx) => {
                     const { imageMeta, title, subCopy, columnLink, theme = 'left' } = column;
-
                     return <Card key={`columnCard-${idx}`} imageMeta={imageMeta} columnLink={columnLink} title={title} subCopy={subCopy} theme={theme} />;
                 })}
             </div>
