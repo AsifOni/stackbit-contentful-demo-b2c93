@@ -16,7 +16,7 @@ export const ThreeColumnCard = (props) => {
 
                     return (
                         <>
-                            <p>{subCopy}</p>
+                            <p>{JSON.stringify(columnData)}</p>
                             {/* <Card
                                 imageMeta={image}
                                 columnLink={columnLink}
