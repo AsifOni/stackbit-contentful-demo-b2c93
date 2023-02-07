@@ -16,6 +16,7 @@ export const ThreeColumnCard = (props) => {
 
                     return (
                         <>
+                            
                             <Card
                                 imageMeta={image}
                                 columnLink={columnLink}
