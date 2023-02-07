@@ -14,7 +14,7 @@ export const ThreeColumnCard = (props) => {
                 {columnData?.map((column, idx) => {
                     const { imageMeta, title, subCopy, columnLink, theme = 'left' } = column;
 
-                    return <Card key={} imageMeta={imageMeta} columnLink={columnLink} title={title} subCopy={subCopy} theme={theme} />;
+                    return <Card key={`columnCard-`} imageMeta={imageMeta} columnLink={columnLink} title={title} subCopy={subCopy} theme={theme} />;
                 })}
             </div>
         </div>
