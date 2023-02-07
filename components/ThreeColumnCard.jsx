@@ -23,7 +23,6 @@ export const ThreeColumnCard = (props) => {
                             subCopy={subCopy}
                             theme={theme}
                         /> */}
-                        </>
                     );
                 })}
             </div>
