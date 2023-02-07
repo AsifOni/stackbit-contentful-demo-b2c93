@@ -23,7 +23,7 @@ const componentMap = {
 };
 
 export default function ComposablePage({ page }) {
-    console.log('Jello Page', page);
+    console.log('Jello Page', page.sections);
     return (
         <div>
             {(page.sections || []).map((section, idx) => {
