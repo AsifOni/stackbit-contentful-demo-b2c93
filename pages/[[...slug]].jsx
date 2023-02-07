@@ -12,7 +12,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
     const slug = '/' + (params?.slug ?? ['']).join('/');
     const page = await getPageFromSlug(slug);
-    console.log('Content type', content_type);
+    console.log('Content type', page);
     return { props: { page } };
 }
 
