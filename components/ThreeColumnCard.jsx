@@ -17,13 +17,13 @@ export const ThreeColumnCard = (props) => {
                     return (
                         <>
                             <p>{title}</p>
-                            <Card
+                            {/* <Card
                                 imageMeta={image}
                                 columnLink={columnLink}
                                 title={title}
                                 subCopy={subCopy}
                                 theme={theme}
-                            />
+                            /> */}
                         </>
                     );
                 })}
