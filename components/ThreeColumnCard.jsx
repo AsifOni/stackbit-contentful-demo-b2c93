@@ -10,7 +10,7 @@ export const ThreeColumnCard = (props) => {
 
             {caption && <p className="leading-normal text-abbey mb-4">{caption}</p>}
 
-            <div className="flex flex-row flex-wrap space-x-5 md:flex-nowrap">
+            <div className="flex flex-row flex-wrap space-x-5 md:flex-nowrap space-x-5">
                 {columnData?.map((column, idx) => {
                     const { imageMeta, title, subCopy, columnLink, theme = 'left' } = column;
 
