@@ -19,26 +19,26 @@ export const Card = (props) => {
     };
     const { imageMeta, title, subCopy, columnLink, theme = 'left' } = props;
 
-    // const options = {
-    //     renderNode: {
-    //         [BLOCKS.LIST_ITEM]: (node, children) => (
-    //             <li key={`${node.content[0].content[0].value}'-key'`} className="text-base">
-    //                 {node.content[0].content[0].value}
-    //             </li>
-    //         ),
-    //         [BLOCKS.UL_LIST]: (node, children) => <ul className="list-disc ml-5">{children}</ul>,
-    //         [INLINES.HYPERLINK]: (node, children) => (
-    //             <Link href={node.data.uri} passHref legacyBehavior>
-    //                 <a rel="noreferrer">{children[0]}</a>
-    //             </Link>
-    //         ),
-    //         [BLOCKS.PARAGRAPH]: (node, children) => (
-    //             <p key={`${children}'-key'`} className={`leading-normal text-abbey ${themeClassMap.typoGraphy[theme]}`}>
-    //                 {children}
-    //             </p>
-    //         ),
-    //     },
-    // };
+    const options = {
+        renderNode: {
+            [BLOCKS.LIST_ITEM]: (node, children) => (
+                <li key={`${node.content[0].content[0].value}'-key'`} className="text-base">
+                    {node.content[0].content[0].value}
+                </li>
+            ),
+            [BLOCKS.UL_LIST]: (node, children) => <ul className="list-disc ml-5">{children}</ul>,
+            [INLINES.HYPERLINK]: (node, children) => (
+                <Link href={node.data.uri} passHref legacyBehavior>
+                    <a rel="noreferrer">{children[0]}</a>
+                </Link>
+            ),
+            [BLOCKS.PARAGRAPH]: (node, children) => (
+                <p key={`${children}'-key'`} className={`leading-normal text-abbey ${themeClassMap.typoGraphy[theme]}`}>
+                    {children}
+                </p>
+            ),
+        },
+    };
 
     const CardBody = () => {
         return (
