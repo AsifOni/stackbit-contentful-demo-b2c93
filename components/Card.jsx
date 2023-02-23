@@ -47,7 +47,7 @@ export const Card = (props) => {
                     <CustomImage theme={columnLink ? 'rounded-xl' : ''} {...imageMeta} />
                 </div>
                 <h3 className="mb-3 text-blue-charcoal font-bold">{title}</h3>
-                <Markdown className="mb-6 text-lg" data-sb-field-id={subCopy}>
+                <Markdown className="mb-6 text-lg">
                     {subCopy}
                 </Markdown>
                 {/* {subCopy && documentToReactComponents(subCopy, options)} */}
