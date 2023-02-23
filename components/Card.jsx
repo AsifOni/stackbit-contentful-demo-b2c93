@@ -1,7 +1,6 @@
 import Link from 'next/link';
 // import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 // import { BLOCKS, INLINES } from '@contentful/rich-text-types';
-import Markdown from 'markdown-to-jsx';
 
 /* Custom imports */
 import { CustomImage } from './CustomImage.jsx';
