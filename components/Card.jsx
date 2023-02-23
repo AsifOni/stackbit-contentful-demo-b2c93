@@ -50,7 +50,7 @@ export const Card = (props) => {
                 <Markdown options={{ forceBlock: true }} className="mb-6 text-lg" data-sb-field-id={props.body}>
                     {props.body}
                 </Markdown>
-                {subCopy && documentToReactComponents(subCopy, options)}
+                {/* {subCopy && documentToReactComponents(subCopy, options)} */}
             </div>
         );
     };
