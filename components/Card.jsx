@@ -40,22 +40,22 @@ export const Card = (props) => {
     //     },
     // };
 
-    const CardBody = () => {
-        return (
-            <div className={`flex flex-col ${themeClassMap.container[theme]}`}>
-                <div className={`mt-2 mb-4`}>
-                    <CustomImage theme={columnLink ? 'rounded-xl' : ''} {...imageMeta} />
-                </div>
-                <h3 className="mb-3 text-blue-charcoal font-bold">{title}</h3>
-                {subCopy &&
-                    (<Markdown options={{ forceBlock: true }} className="mb-6 text-lg">
-                        {subCopy}
-                    </Markdown>)
-                }
-                {/* {subCopy && documentToReactComponents(subCopy, options)} */}
-            </div>
-        );
-    };
+    // const CardBody = () => {
+    //     return (
+    //         <div className={`flex flex-col ${themeClassMap.container[theme]}`}>
+    //             <div className={`mt-2 mb-4`}>
+    //                 <CustomImage theme={columnLink ? 'rounded-xl' : ''} {...imageMeta} />
+    //             </div>
+    //             <h3 className="mb-3 text-blue-charcoal font-bold">{title}</h3>
+    //             {subCopy &&
+    //                 (<Markdown options={{ forceBlock: true }} className="mb-6 text-lg">
+    //                     {subCopy}
+    //                 </Markdown>)
+    //             }
+    //             {/* {subCopy && documentToReactComponents(subCopy, options)} */}
+    //         </div>
+    //     );
+    // };
 
     return (
         <>
