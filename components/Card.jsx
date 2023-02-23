@@ -50,25 +50,25 @@ export const Card = (props) => {
                 {subCopy &&
                     <div>
                         {subCopy}
-                        </div>
+                    </div>
                     </Markdown>)
-                }
-                {/* {subCopy && documentToReactComponents(subCopy, options)} */}
-            </div>
+    }
+    {/* {subCopy && documentToReactComponents(subCopy, options)} */ }
+            </div >
         );
     };
 
-    return (
-        <>
-            {columnLink ? (
-                <Link href={columnLink}>
-                    <a rel="noreferrer">
-                        <CardBody />
-                    </a>
-                </Link>
-            ) : (
+return (
+    <>
+        {columnLink ? (
+            <Link href={columnLink}>
+                <a rel="noreferrer">
                     <CardBody />
-                )}
-        </>
-    );
+                </a>
+            </Link>
+        ) : (
+                <CardBody />
+            )}
+    </>
+);
 };
