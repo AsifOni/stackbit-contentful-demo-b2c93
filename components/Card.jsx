@@ -51,7 +51,8 @@ export const Card = (props) => {
                     (<Markdown options={{ forceBlock: true }} className="mb-6 text-lg">
                         {subCopy}
                     </Markdown>
-                    )}
+                    )
+                }
                 {/* {subCopy && documentToReactComponents(subCopy, options)} */}
             </div>
         );
