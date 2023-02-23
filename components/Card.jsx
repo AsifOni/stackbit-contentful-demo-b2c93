@@ -51,7 +51,7 @@ export const Card = (props) => {
                     <div>
                         {subCopy}
                     </div>)
-    }
+                }
     {/* {subCopy && documentToReactComponents(subCopy, options)} */ }
             </div >
         );
