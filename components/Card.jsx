@@ -50,8 +50,7 @@ export const Card = (props) => {
                 {subCopy &&
                     <div>
                         {subCopy}
-                    </div>
-                    </Markdown>)
+                    </div>)
     }
     {/* {subCopy && documentToReactComponents(subCopy, options)} */ }
             </div >
