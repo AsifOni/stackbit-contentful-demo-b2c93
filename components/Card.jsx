@@ -48,8 +48,9 @@ export const Card = (props) => {
                 </div>
                 <h3 className="mb-3 text-blue-charcoal font-bold">{title}</h3>
                 {subCopy &&
-                    <div></div>
+                    <div>
                         {subCopy}
+                        </div>
                     </Markdown>)
                 }
                 {/* {subCopy && documentToReactComponents(subCopy, options)} */}
