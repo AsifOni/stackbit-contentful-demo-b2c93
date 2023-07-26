@@ -14,6 +14,7 @@
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^15.16.2",
     "@contentful/rich-text-types": "^16.0.2",
+    "ccg-foundation": "^0.0.0-dev.78",
     "ccg-rewards": "^0.0.0-dev.22",
     "markdown-to-jsx": "^7.1.9",
     "next": "12.2.3",
